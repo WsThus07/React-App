@@ -1,0 +1,12 @@
+body {
+    background: url('./../assets/wallpaperflare.com_wallpaper (4).jpg');
+    background-size: contain;
+    /* Scale the background image to cover the entire container */
+    background-repeat: repeat-y;
+    /* Prevent the image from repeating */
+}
+
+.colorChange {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+
+}

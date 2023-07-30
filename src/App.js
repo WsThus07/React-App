@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
+import Navbar from './components/shared/Navbar'
+import Main from './components/main/Main';
+import Section1 from './components/main/Section1';
+import Section2 from './components/main/Section2';
+import  Section3  from './components/main/Section3';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Section4 from './components/main/Section4';
+import Footer from './components/shared/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='App'>
+    <Navbar />
+    <Main>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Footer/>
+      
+    </Main>
+   </div>
+
   );
 }
 
